@@ -6,7 +6,7 @@ using System.Text;
 using Xamarin.Forms;
 
 namespace App13
-{
+{//new
 	public partial class App : Application
 	{
 		public App ()
