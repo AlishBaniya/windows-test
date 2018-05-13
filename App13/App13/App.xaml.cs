@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
 using Xamarin.Forms;
 
 namespace App13
@@ -18,8 +19,8 @@ namespace App13
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            AppCenter.Start("uwp=c5d9ca42-0cf4-40fc-ab7a-f134900db837;" + "android={Your Android App secret here}" + "ios={Your iOS App secret here}", typeof(Analytics));
+        }
 
 		protected override void OnSleep ()
 		{
